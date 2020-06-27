@@ -2,7 +2,9 @@ from django import forms
 from .models import RegistrationData
 
 class RegistrationForm(forms.ModelForm):
-    class meta:
+
+    class Meta:
+        model = RegistrationData
         fields = [
             'First_name',
             'Last_name',

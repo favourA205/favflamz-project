@@ -1,0 +1,15 @@
+def addUser(request):
+    form = RegistrationForm(request.POST)
+
+    if form.is_valid():
+        my_register= RegistrationData(First_name = form.cleaned_data['First_name'],
+                                      Last_name = form.cleaned_data['Last_name'],
+                                      Phone_number = form.cleaned_data['Phone_number'],
+                                      Email = form.cleaned_data['Email'],)
+
+        my_register.save()
+
+    return redirect('home')
+
+        path('addUser', addUser, name=addUser)
+action="{% url '' addUser %}"

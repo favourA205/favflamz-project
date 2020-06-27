@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>favflamz app</title>
+   <title>{% block title %}Home{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
+{% block body %}
 <nav>
     <div class="nav-wrapper" style="background-color:#6c757d;">
         <div class="container nav-wrapper">
@@ -23,7 +24,7 @@
 </nav>
 <div class="container header" style="color:grey;"><h1><em>Welcome to Favflamz CBT Test</em></h1></div>
 <div class="container reg">
-    <a href="sign/">
+    <a href="signup/">
         <button class="btn waves-effect waves-light" style="background-color:green;" type="submit" name="action">REGISTER HERE
             <i class="material-icons right">flash_on</i>
         </button>
@@ -55,7 +56,7 @@
     </div>
 </footer>
 
-{% block body %}
+
 
 {% endblock %}
 
