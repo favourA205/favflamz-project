@@ -13,3 +13,4 @@ def addUser(request):
 
         path('addUser', addUser, name=addUser)
 action="{% url '' addUser %}"
+                    <input placeholder="First name"  type="text" class="validate">

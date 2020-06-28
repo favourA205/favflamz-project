@@ -1,7 +1,7 @@
 from django import forms
 from .models import RegistrationData
 
-class RegistrationForm(forms.ModelForm):
+class RegistrationModal(forms.ModelForm):
 
     class Meta:
         model = RegistrationData
@@ -12,3 +12,8 @@ class RegistrationForm(forms.ModelForm):
             'Phone_number',
 
         ]
+
+    widget = [
+        'First_Name'
+
+    ]
