@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import home,reg_page,addmodal,home2
+from .views import home,reg_page,addmodal,page1
 
 urlpatterns = [
     path('', home, name='home'),
     path('signup/', reg_page, name='reg_page'),
-    path('home/', home2, name='home2'),
+    path('page1/', page1, name='page1'),
 
     path('addmodal/', addmodal, name='addmodal'),
 

@@ -1,0 +1,451 @@
+{% extends 'base.html' %}
+
+{% block title %}subject and years {% endblock %}
+{% block body %}
+<nav>
+    <div class="nav-wrapper" style="background-color:#6c757d;">
+        <div class="container nav-wrapper">
+            <a href="#!" class="brand-logo" style="color:gold;">Favflamz CBT Test</a>
+            <ul class="right hide-on-med-and-down">
+            <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="badges.html"><i class="material-icons right">menu</i></a></li>
+          </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<div class="container intro">
+    <h3 style="font-size:24px; color:#28a745; text-align:center;"><em>To start studying the free online past questions right now, please select the subjects to be examined on. English Language is compulsory so you are allowed to select 3 other subjects and the year of your choice below. After selection, proceed to the next page.</em></h3>
+    <h3 style="color:#20c997"><em>Please select the appropriate details for your test</em></h3>
+</div>
+
+
+<div class="container subjects-years-dropdown">
+    <div class="row">
+        <div class="col s6">
+            <h3 style="color:teal;">Subjects</h3>
+            <form action="#">
+                <p>
+                    <label>
+                        <input type="checkbox" checked="checked" disabled="disabled" />
+                        <span> <b>English Language</b></span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id=" Accounts - Principles of Accounts" type="checkbox" />
+                        <span> <em>Accounts - Principles of Accounts</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Agricultural Science" type="checkbox" />
+                        <span><em>Agricultural Science</em> </span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Animal Husbandry" type="checkbox" />
+                        <span><em>Animal Husbandry</em> </span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Arabic" type="checkbox" />
+                        <span><em>Arabic</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Biology" type="checkbox" />
+                        <span><em>Biology</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Chemistry" type="checkbox" />
+                        <span><em>Chemistry</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Christian Religious Knowledge (CRK)" type="checkbox" />
+                        <span><em>Christian Religious Knowledge (CRK)</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Civic Education" type="checkbox" />
+                        <span><em>Civic Education</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Commerce" type="checkbox" />
+                        <span><em>Commerce</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Economics" type="checkbox" />
+                        <span><em>Economics</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Fine Arts" type="checkbox" />
+                        <span><em>Fine Arts</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="French" type="checkbox" />
+                        <span><em>French</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Further Mathematics" type="checkbox" />
+                        <span><em>Further Mathematics</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Geography" type="checkbox" />
+                        <span><em>Geography</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Government" type="checkbox" />
+                        <span><em>Government</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Hausa" type="checkbox" />
+                        <span><em>Hausa</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="History" type="checkbox" />
+                        <span><em>History</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Home Economics" type="checkbox" />
+                        <span><em>Home Economics</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Igbo" type="checkbox" />
+                        <span><em>Igbo</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Insurance" type="checkbox" />
+                        <span><em>Insurance</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Islamic Religious Knowledge (IRK)" type="checkbox" />
+                        <span><em>Islamic Religious Knowledge (IRK)</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Literature in English" type="checkbox" />
+                        <span><em>Literature in English</em> </span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Mathematics" type="checkbox" />
+                        <span><em>Mathematics</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Music" type="checkbox" />
+                        <span><em>Music</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Physics" type="checkbox" />
+                        <span><em>Physics</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id=" Sweet Sixteen" type="checkbox" />
+                        <span><em>Sweet Sixteen</em></span>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>
+                        <input id="Yoruba" type="checkbox" />
+                        <span><em>Yoruba</em></span>
+                    </label>
+
+                </p>
+            </form>
+        </div>
+
+        <div class="col s6">
+            <h3 style="color:teal;">Years</h3>
+            <form action="#" method="post">
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2020</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2019</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2018</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2017</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2016</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2015</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2014</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2013</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2013</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2012</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2011</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2010</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2009</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2008</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2007</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2006</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2005</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2004</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2003</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2002</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2001</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>2000</span>
+                    </label>
+                </p>
+                <div class="col s12" style="padding-top:200px; padding-left:200px;">
+                    <a href="#">
+                        <button style="background-color:green;" class="btn waves-effect waves-light" type="submit" name="action">Proceed
+                        <i class="material-icons right" style="color:gold;">trending_flat</i>
+                        </button>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="page-footer" style="background-color:#6c757d;">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2020 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!"><em>| Favflamz project</em></a>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

@@ -5,8 +5,8 @@ from .models import RegistrationData
 def home(request):
     return render(request, 'base.html')
 
-def home2(request):
-    return render(request, 'home.html')
+def page1(request):
+    return render(request, 'sub and yrs.html')
 
 def reg_page(request):
     mydata = {
