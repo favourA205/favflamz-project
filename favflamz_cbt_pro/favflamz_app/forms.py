@@ -1,19 +1,37 @@
 from django import forms
 from .models import RegistrationData
 
-class RegistrationModal(forms.ModelForm):
-
+class RegistrationForm(forms.ModelForm):
     class Meta:
         model = RegistrationData
         fields = [
-            'First_name',
-            'Last_name',
+            'username',
+            'password',
             'Email',
-            'Phone_number',
-
+            'Phone_number'
         ]
 
-    widget = [
-        'First_Name'
 
-    ]
+
+        widgets = {
+            'username':forms.TextInput(attrs={
+                'class':'form-control',
+                'placeholder':'Enter username'
+            }),
+
+            'password':forms.TextInput(attrs={
+                    'class':'form-control',
+                    'placeholder':'Enter password'
+            }),
+
+            'Email':forms.EmailInput(attrs={
+                    'class':'form-control',
+                    'placeholder':'Enter Email'
+            }),
+
+            'Phone_number':forms.NumberInput(attrs={
+                    'class':'form-control',
+                    'placeholder':'Enter Phone number'
+            }),
+
+        }

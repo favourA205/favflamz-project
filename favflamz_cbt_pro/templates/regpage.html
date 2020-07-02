@@ -3,7 +3,9 @@
 
 {% block title %}signup {% endblock %}
 {% block body %}
-    <nav>
+
+
+<nav>
     <div class="nav-wrapper" style="background-color:#6c757d;">
         <div class="container nav-wrapper">
             <a href="#!" class="brand-logo" style="color:gold; font-size:19.2px;">Favflamz CBT Test Signup page</a>
@@ -11,64 +13,39 @@
     </div>
 
 </nav>
+
+
 <div class="container content1" style="color:#20c997;">
     <h3><em>Fill in the appropriate answers in the form below</em></h3>
 </div>
 
-<div class=" container my-forms">
-    <div class="row">
-        <form action="{% url 'addmodal'  %}" method="post" class="col s12">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="First name"  type="text" class="validate">
 
-                </div>
-                <div class="input-field col s12">
-                    <input placeholder="Last name" type="text" class="validate">
-                </div>
-            </div>
+<div class="container form" style="padding-top:50px; ">
+    <form  action="{% url 'addUser' %}" method="post">
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <input  placeholder="Phone number" type="text" class="validate">
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Email" type="email" class="validate">
+    {% csrf_token %}
 
-                </div>
-            </div>
-            <button class="btn waves-effect waves-light" style="background-color:green;" type="submit" name="action">YES,GIMME!
-                 <i class="material-icons right"></i>
-            </button>
-        </form>
+{{form}}
+    <div class="container payment description">
+        <h3 style="color:#20c997; font-size:24px; text-align:left;">Before you can register, you have to pay a sum of #1000 naira as the registration fee</h3>
+        <div class="pay-now">
+            <h5  class="pay-options" style="color:grey; "><em>Here are the links to the payment options available below</em></h5>
+            <ul class="row">
+                <li  style="font-size:18px;"><a href="#">Bank Transfer</a></li>
+                <li  style="font-size:18px;"><a href="#1">Remitta</a></li>
+            </ul>
+        </div>
+
     </div>
 
-</div>
+    <input type="submit" value="register" class="btn waves-effect waves-light">
 
-<div class="container pay-now">
-    <h5 style="color:blue;"><em>payment options available</em></h5>
-    <ul>
-        <li><a href="#">Bank Transfer</a></li>
-        <li><a href="#1">Remitta</a></li>
-    </ul>
-
-
+    </form>
 
 </div>
 
-<div class=" container btn-pro" style="padding-bottom:30px; padding-left:1000px; ">
-    <a href="/">
-        <button class="btn waves-effect waves-light" style="background-color:green; " type="submit" name="action">PROCEED
-             <i class="material-icons right">trending_flat</i>
-        </button>
-   </a>
-</div>
 
-
-
-
+<!--footer-->
 
 <footer class="page-footer" style="background-color:#6c757d;">
     <div class="container">
@@ -95,6 +72,5 @@
         </div>
     </div>
 </footer>
-
 
 {% endblock %}

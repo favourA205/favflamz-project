@@ -6,39 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 <body>
 {% block body %}
+
+<!-- nav bar-->
 <nav>
     <div class="nav-wrapper" style="background-color:#6c757d;">
         <div class="container nav-wrapper">
             <a href="#!" class="brand-logo" style="color:gold;">Favflamz CBT Test</a>
             <ul class="right hide-on-med-and-down">
-            <li><a href=""><i class="material-icons left">home</i>Home</a></li>
-            <li><a href=""><i class="material-icons right">menu</i></a></li>
+            <li><a href=""><i class="material-icons left"></i>Home</a></li>
+            <li><a href=""><i class="material-icons right"></i></a></li>
           </ul>
         </div>
     </div>
 
 </nav>
-<div class="container header" style="color:grey;"><h1><em>Welcome to Favflamz CBT Test</em></h1></div>
-<div class="container reg" style="padding-left:350px; padding-top:100px;">
-    <a href="signup/">
-        <button class="btn waves-effect waves-light" style="background-color:green; color:#343a40;" type="submit" name="action"><b><em>REGISTER HERE</em></b>
-            <i class="material-icons right" style="color:#343a40;">chrome_reader_mode</i>
-        </button>
-    </a>
+
+<!-- content and register button-->
+
+<div class="mid-detail">
+    <div class="container header" style="color:grey; padding-left:150px; padding-top:40px;"><h3><em>Welcome to Favflamz CBT Test</em></h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container reg" style="padding-left:350px; padding-top:100px;">
+        <a href="signup/">
+            <button class="btn waves-effect waves-light" style="background-color:green; color:#343a40;" type="submit" name="action"><b><em>SIGN UP HERE</em></b>
+                <i class="material-icons right" style="color:#343a40;"></i>
+            </button>
+        </a>
+    </div>
 </div>
-<div class="container button" style="padding-left:700px; padding-bottom:90px;">
-    <a href="page1/">
+
+
+<!-- next page button-->
+<div class="container button" style="padding-left:750px; padding-bottom:60px; padding-top:60px;">
+    <a href="home/">
       <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:#343a40; color:#20c997;">Next Page
         <i class="material-icons right">trending_flat</i>
       </button>
    </a>
 </div>
 
-
+<!---footer-->
 
 <footer class="page-footer" style="background-color:#6c757d;">
     <div class="container">

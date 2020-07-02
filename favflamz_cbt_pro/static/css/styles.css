@@ -1,6 +1,4 @@
-body{
-    background-image:url('/images/memphis-colorful.zip')
-}
+
 
 .header{
     padding-top:100px;
@@ -8,6 +6,10 @@ body{
 }
 .header h1{
     text-align:center;
+}
+
+body.mid-detail{
+    border: 1px solid gold;
 }
 
 
