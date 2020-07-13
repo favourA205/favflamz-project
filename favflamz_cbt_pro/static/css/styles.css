@@ -1,18 +1,12 @@
 
 
-.header{
-    padding-top:100px;
-    padding-left:30px;
-}
-.header h1{
-    text-align:center;
+body{
+    background-color:white;
 }
 
-body.mid-detail{
-    border: 1px solid gold;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+
 }
-
-
-
-
-

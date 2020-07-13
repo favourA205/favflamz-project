@@ -1,5 +1,5 @@
 from django import forms
-from .models import RegistrationData
+from .models import RegistrationData,Select
 
 class RegistrationForm(forms.ModelForm):
     class Meta:
@@ -35,3 +35,18 @@ class RegistrationForm(forms.ModelForm):
             }),
 
         }
+
+
+class selectT(forms.ModelForm):
+    class Meta:
+        model = Select
+        fields = [
+            'subject',
+            'years'
+
+        ]
+
+
+
+
+
