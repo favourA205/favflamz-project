@@ -516,3 +516,35 @@ body.mid-detail{
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+
+
+web scraping
+
+u = requests.get("https://myschool.ng/classroom/geography?exam_type=jamb&exam_year=2012")
+    soup = BeautifulSoup(u.content, "html.parser")
+
+    pagination = soup.find(class_='pagination flex-wrap')
+    #print(pagination)
+    end_page_num = pagination.find_all('li', {'class': 'page-item'})
+    end_page_num_real = (len(end_page_num) - 2)
+    print(end_page_num_real)
+    l = 1
+    while l <= end_page_num_real:
+        r = requests.get("https://myschool.ng/classroom/geography?exam_type=jamb&exam_year=2012&type=&page={}".format(l))
+
+        soup = BeautifulSoup(r.text, "html.parser")
+        x = soup.find(id="question-listing")
+        l += 1
+
+        jj = x.text
+        print(jj)
+
+        frontend = {
+            'ree':jj
+        }
+
+

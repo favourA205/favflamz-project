@@ -20,4 +20,3 @@ class Select(models.Model):
         return '{}'.format(self.subject)
 
 
-
