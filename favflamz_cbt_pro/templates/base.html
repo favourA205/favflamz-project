@@ -5,9 +5,8 @@
    <title>{% block title %}Favflamz cbt app{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  type="text/css" href="{% static 'styles/styles.css' %}">
 </head>
 <body>
 {% block body %}
@@ -18,8 +17,8 @@
             <div class="container nav-wrapper">
                 <a href="#!" class="brand-logo" style="color:gold;">Favflamz CBT Test</a>
                 <ul class="right hide-on-med-and-down">
-                <li><a href=""><i class="material-icons left"></i>Home</a></li>
-                <li><a href=""><i class="material-icons right"></i></a></li>
+                <li><a href=""><i class="fa fa-home" style="font-size:30px; color:gold;"></i></a></li>
+                <li><a href=""><i class="fa fa-user-circle" style="font-size:30px; color:gold;"></i></a></li>
               </ul>
             </div>
         </div>
@@ -31,30 +30,24 @@
     <div class="mid-detail">
         <div class="container header" style="color:grey; padding-left:150px; padding-top:40px;"><h3><em>Welcome to Favflamz CBT Test</em></h3></div>
 
+    </div>
+    <div class="container form">
+        <div class="signinform" style="float:right; padding-right:30px; padding-left:30px; padding-top:20px; border:1px solid grey; background: linear-gradient(to bottom left, #ccccff 0%, #ffff99 100%); width:500px; height:300px;">
+
+            <form action="" method="post">
+
+                <input name="search1" />
 
 
+                <input name="search2" />
 
+            </form>
+            <b>{{formu}}</b>
+            <p style="text-align:center;">Join the platform by clicking</p>
+            <div class="container reg" style="padding-left:85px; padding-top:10px;">
+                <a href="signup/" style="font-size:24px; color:blue	; border:1px solid grey; padding:10px; background: linear-gradient(to bottom left, #ffcccc 0%, #ffff99 100%);">Sign up<i class="fa fa-pencil-square-o" style="color:blue; padding:10px; padding-top:9px;"></i></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="container reg" style="padding-left:350px; padding-top:100px;">
-            <a href="signup/">
-                <button class="btn waves-effect waves-light" style="background-color:green; color:#343a40;" type="submit" name="action"><b><em>SIGN UP HERE</em></b>
-                    <i class="material-icons right" style="color:#343a40;"></i>
-                </button>
-            </a>
+            </div>
         </div>
     </div>
 
@@ -62,8 +55,10 @@
     <!-- next page button-->
     <div class="container button" style="padding-left:750px; padding-bottom:60px; padding-top:60px;">
         <a href="instruct/">
-          <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:#343a40; color:#20c997;">Next Page
-            <i class="material-icons right">trending_flat</i>
+          <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:green; color:white;">
+              Proceed
+              <i class="fa fa-arrow-right" style="color:black;" ></i>
+              <i class="fa fa-arrow-right" style="color:black;" ></i>
           </button>
        </a>
     </div>

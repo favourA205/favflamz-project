@@ -1,12 +1,16 @@
 from django.shortcuts import render,redirect
-from .forms import RegistrationForm
+from .forms import RegistrationForm,signInform
 import requests
 from requests.compat import quote_plus
 from bs4 import BeautifulSoup
 
 # Create your views here.
 def home(request):
-    return render(request, 'base.html')
+    context = {
+        'formu': signInform
+    }
+
+    return render(request, 'base.html',context)
 
 def reg_page(request):
     context = {
@@ -24,6 +28,7 @@ def addUser(request):
     return redirect('base_home')
 
 def page1(request):
+
     select1 = request.POST.get('search1')
     print(select1)
     select2 = request.POST.get('search2')
@@ -40,7 +45,7 @@ def page1(request):
         'search4': select4
 
     }
-    
+
     return render(request, 'sub and yrs.html', context)
 
 
@@ -51,8 +56,15 @@ def instruction_page(request):
 
 
 def chemistry_page(request):
+    sel = request.POST.get('search1')
+    print(sel)
+    jontext = {
+         'g':sel
 
-    return render(request, 'chemistry page.html')
+     }
+
+
+    return render(request, 'chemistry page.html',jontext)
 
 
 

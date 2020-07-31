@@ -4,6 +4,14 @@
 {% block title %}Instruction page {% endblock %}
 {% block body %}
 
+<form action="" method="post">
+    {% csrf_token%}
+    <label>
+        <input type="text"  name="sel" class="form-control" placeholder="Enter detail...">
+    </label>
 
+</form>
+
+{{g}}
 
 {% endblock %}

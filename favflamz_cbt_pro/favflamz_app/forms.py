@@ -1,5 +1,5 @@
 from django import forms
-from .models import RegistrationData
+from .models import RegistrationData,signIn
 
 class RegistrationForm(forms.ModelForm):
     class Meta:
@@ -36,6 +36,28 @@ class RegistrationForm(forms.ModelForm):
 
         }
 
+
+class signInform(forms.ModelForm):
+    class Meta:
+        model = signIn
+        fields = [
+            'username',
+            'password',
+        ]
+
+
+
+        widgets = {
+            'username':forms.TextInput(attrs={
+                'class':'form-control',
+                'placeholder':'Enter username'
+            }),
+
+            'password':forms.TextInput(attrs={
+                    'class':'form-control',
+                    'placeholder':'Enter password'
+            }),
+        }
 
 
 
